@@ -22,10 +22,21 @@ Commit your code regularly and meaningfully.
 
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
-1. How would you describe acessibility on the web to someone new to programming?
+1. How would you describe accessibility on the web to someone new to programming?
+
+    Accessibility gauges how accessible a webpage is with all types of people in mind--including those with vision needs, physical disabilities, slow internet connection, difference devices and etc. Having a highly accessible webpage means all of these groups will not have trouble viewing the contents of your webpage in consideration of their circumstances.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+    One way to ensure a website is accessible is to use scalable units, such as REM, EM, and %. It is important to make sure to use scalable over fixed units because this helps make the webpage more viewable and adaptable with different screen/window sizes. Another way to improve accessibility is to use semantic HTML. For those with visual impairments/physical disabilities, using semantic tags is very important because screen readers refer to these tags to navigate the page accordingly. Without these tags, there is no hierarchy for the screen reader to follow, which would make it difficult for the user to view the contents of the page. The third way to improve accessibility is to use contrasting colors when appropriate. For those with colorblindness, this may sometimes make it difficult to see specific parts of a page. By using visually distinct colors, this forestalls any potential issues that may arise in the future.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+    Variables allow us to store, change, and use data in our program. Similar to its direct english translation, variables can stay the same or be changed. One example of a variable that applies to real life and in code is a counter. Let's say you want to keep track of a score in a game. You would use a counter to tally the score. This counter is the variable. It can either hold the same score or increment by 1 depending on the state of the game. We can use this variable, the counter, for many purposes such as determining which team wins, finding the percentage difference of their scores, comparing their performance to past data, and etc. Variables have a wide range of flexibility that allows us to refer back to data when we need it and include a change to that data if necessary.
+
 4. What is the purpose of using functions in code?
+
+    Functions allow us to repeat actions without rewriting and repeating the same code. By creating and calling functions, it saves us time and keeps our code from looking messy.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
