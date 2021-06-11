@@ -339,7 +339,7 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 function getHTML (data) {
-  for (id in data) {
+  for (const id in data) {
     console.log(`<div id ="artist">`);
     console.log(`<div class="image">`);
     console.log(`   <img src="${data[id].image}"/>`);
