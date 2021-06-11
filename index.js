@@ -245,7 +245,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array){
   const newArr = [];
   for (let i = 0; i < array.length; i++) {
-    const timeFrame = array[i]["years"].split(" - ").map(x => Number(x));
+    const timeFrame = array[i]["years"].split(" - ").map(x => Number(x));   // Splits the string, "year - year", into an array and converts those strings into integers.
     if (timeFrame[0] >= 1900 && timeFrame[1] <= 2000)
       newArr.push(array[i]["name"]);
   }
@@ -308,10 +308,9 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(array){
   const newArr = [];
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++)
     if (array[i].paintings > 100)
       newArr.push(array[i]["name"]);
-  }
   return newArr;
 }
 
@@ -339,18 +338,31 @@ Create a function called `getHTML()` that takes the parameter `data` and uses a 
 The function should console.log 50 chunks of HTML code that match the structure above. 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
-
+function getHTML (data) {
+  for (id in data) {
+    console.log(`<div id ="artist">`);
+    console.log(`<div class="image">`);
+    console.log(`   <img src="${data[id].image}"/>`);
+    console.log(`</div>`);
+    console.log(`<div class = "name">`);
+    console.log(`   <a href="${data[id]["wikipedia"]}"> ${data[id]["name"]}</a>`);
+    console.log(`</div>`);
+    console.log(`<div class = "bio">${data[id]["bio"]}</div>`);
+    console.log(`</div>`);
+  }
+}
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
 function randomize(array){
-    for (let i = 0; i < array.length; i++) {
-        let randomIndex = Math.floor(Math.random() * array.length);
-        let temp = array[i];
-        array[i] = array[randomIndex];
-        array[randomIndex] = temp;
+    for (let i = 0; i < array.length; i++) { 
+        let randomIndex = Math.floor(Math.random() * array.length);  
+        /*Swaps values in index i and randomIndex*/
+        let temp = array[i];            // Temp variable to temporarily store the value at index i
+        array[i] = array[randomIndex];  // Reassign value at index i with value from randomIndex 
+        array[randomIndex] = temp;      // Reassign value at randomIndex with index i's former value
     }
     return array;
   }
