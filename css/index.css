@@ -192,3 +192,17 @@ button:hover{
         margin: 2%;
     }
 }
+
+@media (max-width: 300px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        width: 65%;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+    }
+}
